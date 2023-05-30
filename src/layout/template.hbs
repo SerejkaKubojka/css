@@ -32,33 +32,33 @@
 <body>
 	<div class="page">
 		<div class="page-content">
-			<div class="page_block">
-				<header class="header row g-0">
-					{{> logo}}
-					<nav class="header-nav col-9 right">
-						{{>nav list=header }}
-					</nav>
-				</header>
-			</div>
+
+			<header class="header row">
+				{{> logo}}
+				<nav class="header-nav col-9 right">
+					{{>nav list=header }}
+				</nav>
+			</header>
+
 			{{! ↓ ця кострукція показує куди шаблонізатору треба вставляти код з container файлу --}}
 			{{{body}}}
-			<div class="page_block">
-				<footer class="footer row">
-					<div class="col-3">
-						{{> logo}}
-						<span class="footer-copyright">Copyright 2023</span>
-					</div>
 
-					{{#each footer}}
-					<div class="col-3">
-						<div class="footer_title">
-							{{title}}
-						</div>
-						{{>nav list=links isVertical=true }}
+			<footer class="footer row">
+				<div class="col-3">
+					{{> logo}}
+					<span class="footer-copyright">Copyright 2023</span>
+				</div>
+
+				{{#each footer}}
+				<div class="col-3">
+					<div class="footer_title">
+						{{title}}
 					</div>
-					{{/each}}
-				</footer>
-			</div>
+					{{>nav list=links isVertical=true }}
+				</div>
+				{{/each}}
+			</footer>
+
 		</div>
 	</div>
 
