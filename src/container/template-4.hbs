@@ -1,0 +1,33 @@
+{{#with main}}
+<div class="hero_3">
+    <img src="{{image}}" alt="Hero image" class="hero_3_photo">
+    <div class="hero_content">
+        <h1 class="hero_title">{{heading}}</h1>
+        <p class="hero_text">{{descriotion}}</p>
+        <a href="{{href}}" class="button hero_button">{{button}}</a>
+    </div>
+
+</div>
+{{/with}}
+
+<main class="featured">
+    {{#each featured}}
+    <div class="featured_card">
+        <div class="featured_card_image" style="background-image: url({{photo}});"></div>
+        <h2 class="featured_card_title">{{heading}}</h2>
+        <p class="featured_card_text">{{info}}</p>
+        <a href="{{linkUrl}}" class="featured_card_link">{{linkText}}</a>
+    </div>
+    {{/each}}
+</main>
+
+
+
+<div class="form">
+    {{#each actions}}
+    <div class="form_card">
+        <h2 class="form_title">{{heading}}</h2>
+        <a href="{{href}}" class="form_button button">{{text}}</a>
+    </div>
+    {{/each}}
+</div>
