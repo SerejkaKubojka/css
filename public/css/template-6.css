@@ -1,0 +1,271 @@
+:root {
+    --space-s: 8px;
+    --space-m: 12px;
+    --space-ms: 16px;
+    --space-l: 24px;
+    --space-b: 36px;
+
+    --size-s: 14px;
+    --size-d: 16px;
+    --size-l: 20px;
+    --size-b: 24px;
+
+    --color-border: #DEE2E6;
+    --color-title: #212529;
+    --color-text: #343A40;
+    --color-primary: #006adb;
+
+    --border-radius: 12px;
+
+    --page-width: 1000px;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    gap: var(--space-l);
+    align-self: start;
+}
+
+.info {
+    max-width: 600px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+}
+
+.info_title {
+    font-size: 56px;
+    color: var(--color-title);
+    font-weight: 700;
+}
+
+.info_text {
+    font-size: var(--size-b);
+    color: var(--color-title);
+}
+
+/*---*/
+
+
+
+.form {
+    max-width: 400px;
+    width: 100%;
+    background-color: #F8F9FA;
+    border-radius: 4px;
+    border: 1px solid #DEE2E6;
+    padding: 60px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+
+}
+
+.form hr {
+    width: 100%;
+    margin: 0;
+    border-color: #212529;
+}
+
+
+.form_info {
+    text-align: center;
+    color: var(--color-title);
+    font-size: var(--size-d);
+}
+
+.form_button2 {
+    max-width: 100%;
+    width: 100%;
+    padding: 12px;
+    transition: background 0.7s;
+}
+
+.form_inut_list {
+    display: flex;
+    gap: var(--space-m);
+    width: 100%;
+    flex-direction: column;
+    font-size: var(--size-d);
+}
+
+.form_input {
+    width: 100%;
+    padding: var(--space-m);
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #CED4DA;
+}
+
+.form_input::placeholder {
+    color: var(--color-title);
+}
+
+.form_checkbox {
+    display: flex;
+    gap: var(--space-s);
+    align-items: center;
+    width: 100%;
+}
+
+.form_checkbox input {
+    border: 1px solid #767676;
+    border-radius: 4px;
+    display: none;
+
+}
+
+.form_checkbox>input~div {
+    border: 1px solid #767676;
+    border-radius: 4px;
+    height: 13px;
+    width: 13px;
+}
+
+.form_checkbox>input:checked~div {
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+
+}
+
+.form_checkbox label {
+    color: var(--color-title);
+    font-size: var(--size-d);
+    cursor: pointer;
+}
+
+/*---*/
+
+.updates {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: var(--space-l);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+}
+
+.updates_title {
+    font-size: var(--size-b);
+    color: var(--color-title);
+
+    padding-bottom: var(--space-m);
+    border-bottom: var(--color-border) solid 1px;
+}
+
+.upd_link {
+    font-size: var(--size-s);
+
+}
+
+.list_upd {
+    display: flex;
+    gap: var(--space-m);
+    padding-bottom: var(--space-m);
+    border-bottom: var(--color-border) solid 1px;
+
+    position: relative;
+
+    padding-right: var(--space-b);
+}
+
+.upd_image {
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-primary);
+    font-size: 12px;
+    padding: 7px 0px;
+}
+
+.upd_name {
+    font-size: var(--size-d);
+    color: #6C757D;
+    font-weight: 500;
+}
+
+.upd_text {
+    font-size: var(--size-d);
+    color: #6C757D;
+
+}
+
+.msg_day {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #6C757D;
+    font-size: var(--size-d);
+}
+
+
+
+
+.exp {
+    display: flex;
+    background: #F8F9FA;
+    border-radius: 4px;
+    gap: var(--space-l);
+    flex-direction: column;
+    padding: 28px var(--space-l);
+    position: relative;
+
+}
+
+.expirience_list {
+    display: flex;
+    gap: var(--space-l);
+
+
+}
+
+.expirience_list div {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-title);
+    border: #E4EAF2 solid 1px;
+    border-radius: var(--border-radius);
+    padding: var(--space-l);
+    gap: 8px;
+    width: 100%;
+}
+
+.expirience_list div strong {
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.expirience_list div p {
+    color: #B1B1B1;
+    font-size: var(--size-d);
+    line-height: 150%;
+    margin: 0;
+}
+
+.expirience_badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 12px;
+
+    color: #fff;
+    font-size: var(--size-l);
+    font-weight: 700;
+
+    background: #FF7347;
+    border-radius: 70px;
+    transform: rotate(30deg);
+    position: absolute;
+    width: 90px;
+    height: 53px;
+
+    top: 10%;
+    right: -40px;
+    top: -26px;
+}
