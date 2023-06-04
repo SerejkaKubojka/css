@@ -64,13 +64,21 @@ a:hover {
 }
 
 .logo {
-  font-size: 18;
-}
-
-.nav {
-  display: block;
+  width: fit-content;
+  padding: 8px 12px;
+  height: auto;
 
 }
+
+.logo span {
+  background: var(--color-primary);
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-weight: 700;
+  color: white;
+  font-size: var(--size-a);
+}
+
 
 .header-nav {
   width: fit-content;
