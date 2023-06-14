@@ -497,6 +497,7 @@ body {
         .feadback_image {
             border-radius: 50%;
             width: max-content;
+            width: 100%;
         }
 
         .about_rg {
@@ -520,7 +521,20 @@ body {
         }
 
         .about_rg .about_card:last-of-type {
-            grid-column: none;
+            grid-column: 1;
+        }
+
+        .about_card {
+            max-width: 285px;
+            height: 420px;
+        }
+
+        .features_section_2 {
+            background: none;
+        }
+
+        .features_grid_3 {
+            padding: 0;
         }
 
 
@@ -530,6 +544,11 @@ body {
         .hero_button {
             grid-template-columns: 1fr;
             gap: var(--spacing-1);
+        }
+
+
+        .card_double {
+            grid-row: auto;
         }
 
         .features_grid_4,
